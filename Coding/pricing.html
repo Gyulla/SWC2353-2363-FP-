@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunway Lagoon</title>
+    <link rel="stylesheet" href="stylePricing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="sunway-logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attract.html">Attractions</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="table">
+        <h1>Pricing</h1><br>
+        <table>
+            <tr>
+                <th>Admission Ticket</th>
+                <th>Rates(MYR)</th>
+            </tr>
+            <tr>
+                <td>Adult(13 years old and above)</td>
+                <td>RM220</td>
+            </tr>
+            <tr>
+                <td>Child(12 years old and below)</td>
+                <td>RM185</td>
+            </tr>
+            <tr>
+                <td>Senior(60 years old and above)</td>
+                <td>RM185</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section class="booking-form">
+    <h2>Book Your Tickets Now!</h2>
+    <form action="calculate.php" method="post">
+        <div class="form-row">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form-row">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-row">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-row">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+        </div>
+        <div class="form-row">
+            <label for="adult-ticket">Adult Tickets:</label>
+            <input type="number" id="adult-ticket" name="adult-ticket" value="0" required>
+        </div>
+        <div class="form-row">
+            <label for="child-ticket">Children Tickets:</label>
+            <input type="number" id="child-ticket" name="child-ticket" value="0" required>
+        </div>
+        <div class="form-row">
+            <label for="senior-ticket">Senior Tickets:</label>
+            <input type="number" id="senior-ticket" name="senior-ticket" value="0" required>
+        </div>
+
+        <input type="submit" value="Book Now">
+    </form>
+</section>
+
+</body>
+</html>

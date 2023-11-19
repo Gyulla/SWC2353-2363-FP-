@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt - Sunway Lagoon</title>
+    <link rel="stylesheet" href="stylePricing.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .receipt {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .receipt h2 {
+            color: #ff9900;
+        }
+
+        .receipt-info {
+            margin-top: 20px;
+        }
+
+        .receipt-info p {
+            margin: 5px 0;
+        }
+
+        .total-amount {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .total-amount span {
+            color: #ff9900;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="receipt">
+    <h2>Booking Receipt</h2>
+
+    <div class="receipt-info">
+        <p><strong>Name:</strong> <?php echo $name; ?></p>
+        <p><strong>Phone:</strong> <?php echo $phone; ?></p>
+        <p><strong>Email:</strong> <?php echo $email; ?></p>
+        <p><strong>Date:</strong> <?php echo $date; ?></p>
+        <p><strong>Adult Tickets:</strong> <?php echo $adultTickets; ?> x RM<?php echo $adultPrice; ?></p>
+        <p><strong>Child Tickets:</strong> <?php echo $childTickets; ?> x RM<?php echo $childPrice; ?></p>
+        <p><strong>Senior Tickets:</strong> <?php echo $seniorTickets; ?> x RM<?php echo $seniorPrice; ?></p>
+    </div>
+
+    <div class="total-amount">
+        <p><strong>Total Amount:</strong> <span>RM<?php echo $grandTotal; ?></span></p>
+    </div>
+</div>
+
+</body>
+</html>

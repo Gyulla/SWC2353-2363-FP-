@@ -1,0 +1,43 @@
+/* receipt_style.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.receipt {
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.receipt h2 {
+    color: #ff9900;
+}
+
+.receipt-info {
+    margin-top: 20px;
+}
+
+.receipt-info p {
+    margin: 5px 0;
+}
+
+.total-amount {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.total-amount span {
+    color: #ff9900;
+    font-weight: bold;
+}
